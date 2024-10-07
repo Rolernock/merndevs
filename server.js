@@ -11,7 +11,7 @@ import { notFound, errorHandler } from './middleware/errorHandler.js'
 
 dotenv.config()
 const app = express()
-const PORT = 5000
+const PORT = process.env.PORT
 
 //Parse Incoming Request With JSON bodies
 app.use(express.json())
