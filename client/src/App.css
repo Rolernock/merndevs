@@ -1,0 +1,128 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+:root {
+  --primary-color: #3a3632;
+  --secondary-color: #f8f8f8;
+}
+
+body {
+  background: var(--secondary-color);
+}
+
+.dark-bg {
+  background: var(--primary-color);
+}
+
+.light-btn {
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  border: none;
+}
+
+.light-btn:hover {
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  opacity: 0.8;
+}
+
+.w-small {
+  width: 70px;
+}
+
+.profile-avatar {
+  width: 80px;
+  margin-right: 20px;
+}
+.icon-custom {
+  cursor: pointer;
+  color: var(--primary-color);
+  transition: color 0.3s;
+}
+
+.icon-custom:hover {
+  color: #007bff;
+}
+
+.btn-color {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.btn-color:hover {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  opacity: 0.8;
+}
+
+.thumbs-icon {
+  cursor: pointer;
+}
+
+.thumbs-icon:hover {
+  color: #0056b3;
+}
+
+.f-page {
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+.text-large {
+  font-size: 2rem;
+}
+.light-text {
+  color: var(--secondary-color);
+}
+
+.dark-text {
+  color: var(--primary-color);
+}
+
+.icon-large {
+  font-size: 7rem;
+  color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .text-large {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .d-flex.gap-2 {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .light-btn {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .f-page {
+    padding: 20px;
+  }
+  .container {
+    padding: 0 15px;
+  }
+
+  .w-small {
+    width: 50px;
+  }
+  .xs-btn {
+    padding: 2px 4px;
+  }
+
+  .icon-large {
+    font-size: 5rem;
+  }
+}
